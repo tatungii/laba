@@ -19,11 +19,23 @@ Section::Section()
 
 void Section::Enter()
 {
-	cout << "\n¬ведите значение левой границы отрезка: ";
-	cin >> left;
+	do
+	{
+		cout << "\n¬ведите значение левой границы отрезка: ";
+		cin >> left;
 
-	cout << "¬ведите значение правой границы отрезка: ";
-	cin >> right;
+		cout << "¬ведите значение правой границы отрезка: ";
+		cin >> right;
+
+		if (left >= right)
+		{
+			Error();
+		}
+		else
+		{
+			Print();
+		}
+	} while (left >= right);
 }
 
 void Section::Print()

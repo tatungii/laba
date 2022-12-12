@@ -37,19 +37,7 @@ int main()
 
 	Section segment;
 
-	do
-	{
-		segment.Enter();
-
-		if (segment.left >= segment.right)
-		{
-			segment.Error();
-		}
-		else
-		{
-			segment.Print();
-		}
-	} while (segment.left >= segment.right);
+	segment.Enter();
 
 	segment.Length();
 
