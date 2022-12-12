@@ -11,8 +11,8 @@ public:
 	Section(float left, float right);
 	Section(Section &sectionName);
 	Section();
-	void Enter();
-	void Print();
+	virtual void Enter();
+	virtual void Print();
 	void Error();
 	float Length();
 	~Section();

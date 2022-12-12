@@ -5,5 +5,4 @@
 using namespace std;
 class Triangle : public Section
 {
-	friend void friendly(Section& segment);
 };

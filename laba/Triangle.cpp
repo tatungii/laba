@@ -1,3 +1,8 @@
 #include "Triangle.h"
 
-float a;
+float thirdPoint;
+
+void Enter() override
+{
+
+};
