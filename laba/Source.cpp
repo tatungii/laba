@@ -19,16 +19,13 @@ float operator+(Section& a, Section& b)
 
 istream& operator >> (istream& in, Section& p)
 {
-	cout << "\nПерегрузка оператора ввода (>>) выполнена успешна.";
-	cout << "\nВведите любое число: ";
-	in >> p.a;
+	in >> p.left>>p.right;
 	return in;
 }
 
 ostream& operator << (ostream& os, Section& p)
 {
-	cout << "Перегрузка оператора вывода (<<) выполнена успешна.";
-	return os << "\nЧисло: " << p.a << ".";
+	return os << "\nЛевая граница отрезка: " << p.left << "." << "\nПравая граница отрезка: " << p.right << ".";
 }
 
 int main()
