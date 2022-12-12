@@ -1,4 +1,5 @@
 #include "Section.h"
+#include "stdlib.h"
 
 /*
  *	|	Создать класс отрезков Section, содержащий два вещественных поля - концы отрезка.	|
@@ -13,8 +14,7 @@ void friendly(Section& segment)
 
 float operator+(Section& a, Section& b)
 {
-	cout << "Перегрузка оператора (+) выполнена успешна.";
-	return a.right + b.right;
+	return  max(a.right, b.right) - min(a.left, b.left);
 }
 
 istream& operator >> (istream& in, Section& p)
