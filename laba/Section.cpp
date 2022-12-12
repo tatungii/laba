@@ -36,9 +36,9 @@ void Section::Error()
 	cout << "\nЛевая граница отрезка не может быть больше или равна правой, попробуйте еще раз!";
 }
 
-void Section::Length()
+float Section::Length()
 {
-	cout << "\nДлина отрезка: " << right - left << ".";
+	return(right - left);
 }
 
 Section::~Section()

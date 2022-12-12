@@ -19,6 +19,6 @@ public:
 	void Enter();
 	void Print();
 	void Error();
-	void Length();
+	float Length();
 	~Section();
 };
