@@ -13,6 +13,8 @@ public:
 	float a;
 	float left;
 	float right;
+	Section(float left, float right);
+	Section(Section &sectionName);
 	Section();
 	void Enter();
 	void Print();

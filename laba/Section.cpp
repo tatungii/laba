@@ -1,9 +1,20 @@
 #include "Section.h"
 
+Section::Section(float left, float right)
+{
+	this->left = left;
+	this->right = right;
+}
+
+Section::Section(Section &sectionName)
+{
+	left = sectionName.left;
+	right = sectionName.right;
+}
+
 Section::Section()
 {
-	cout << "Выполнился конструктор.";
-	test = "\nДружественная функция работает корректно.";
+	cout << "Выполнился конструктор по умолчанию.";
 }
 
 void Section::Enter()
