@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="Section.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Section.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

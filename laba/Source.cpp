@@ -9,7 +9,7 @@
 
 void friendly(Section& segment)
 {
-	cout << segment.test;
+	cout << segment.Length();
 }
 
 float operator+(Section& a, Section& b)
@@ -42,8 +42,6 @@ int main()
 	Section segment;
 
 	segment.Enter();
-
-	segment.Length();
 
 	friendly(segment);
 
