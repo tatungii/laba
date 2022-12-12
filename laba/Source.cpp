@@ -17,6 +17,13 @@ float operator+(Section& a, Section& b)
 	return  max(a.right, b.right) - min(a.left, b.left);
 }
 
+Section operator++(Section& s)
+{
+	s.left -= 1;
+	s.right += 1;
+	return s;
+}
+
 istream& operator >> (istream& in, Section& p)
 {
 	in >> p.left>>p.right;
